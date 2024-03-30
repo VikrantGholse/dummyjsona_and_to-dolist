@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assessment Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li onclick="showSection('home')">Home</li>
+      <li onclick="showSection('gallery')">Gallery</li>
+      <li onclick="showSection('todo')">To-Do</li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <div class="container">
+      <div class="paragraph-container">
+        <h1>ABOUT</h1>
+        <p>The website is a straightforward landing page with a to-do list feature and a picture gallery. Users can browse between the Home, Gallery, and To-Do List sections using the navigation bar at the top of the page. While the Gallery area shows a dynamically filled image gallery, the Home section greets visitors to the main page. Users can add tasks to the To-Do List section, where they appear as list items. With a backdrop image and an adaptable layout that works on a range of devices, the page has a simple, minimalistic design.</p>
+      </div>
+    </div>
+  </header>
+
+
+  <section id="gallery" style="display:none;">
+    <h2>IMAGE GALLERY</h2>
+    <div id="image-gallery" class="image-grid">
+      <!-- Gallery images will be populated dynamically using JavaScript -->
+    </div>
+  </section>
+
+
+ <section id="todo" style="display:none;">
+  <h2>To-Do</h2>
+  <div id="todoContainer">
+    <input type="text" id="todoInput" placeholder="Enter your task">
+    <button onclick="addTodo()">Add</button>
+  </div>
+  <ul id="todoList">
+  </ul>
+</section>
+
+
+  <script src="scripts.js"></script>
+</body>
+</html>
